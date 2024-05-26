@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5em 5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99999;
+}
+
+#header .logo {
+    color: #002431;
+    font-weight: 800;
+    font-size: 2.5em;
+    text-decoration: none;
+}
+
+#header ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position:relative;
+}
+
+#header ul li {
+    list-style: none;
+    margin: 0px 10px;
+    position:relative;
+}
+
+#header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #003549;
+    border-radius: 20px;
+}
+
+#header ul li a:hover,
+#header ul li a.active {
+    background: #003549;
+    color: white;
+}
+
+
+/* tryy */
+
+/* Dropdown Menu */
+.dropdown {
+    display:flex;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #dee3e6;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 18px;
+    /* margin-top:10px; */
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #085a7a;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .header .dropdown:hover .dropbtn {
+  background-color: white;
+  color: #003549;
+}
+
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #085a7a, transparent);
+    z-index: 10;
+}
+
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section #text span {
+    font-size: 0.2em;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: white;
+}
+
+section #text {
+    position: absolute;
+    color: #ffffff;
+    font-size: 15vw;
+    text-align: center;
+    line-height: 0.55em;
+    font-family: 'Rancho', cursive;
+    transform: translateY(-90%);
+    top: 80%;
+   
+    transition:top 1.5s ease;
+    margin-bottom: 120%;
+}
+
+
+#explore {
+    text-decoration: none;
+    padding: 8px 25px;
+    background: white;
+    color: #003549;
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    transform: translateY(100px);
+}
+
+#explore:hover {
+    background: #003549;
+    color: white;
+    transition:color 0.3s ease;
+}
+
+#top {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #4faa2e;
+    bottom: 10%;
+    right: 5%;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 25px;
+    border-radius: 50%;
+    /* opacity: 0;
+    pointer-events: none;
+    transition: 0.5s; */
+
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+
+.glass1 {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-Left: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    padding: 1em;
+    margin-bottom: 2%;
+}
+
+.glass2 {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-Left: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    padding: 1em;
+    margin-bottom: 2%;
+}
+
+.glass3 {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-Left: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    padding: 1em;
+    margin-bottom: 2%;
+}
+
+.sec {
+    position: relative;
+    padding: 10%;
+    background: #085a7a;
+    padding-bottom: 15%;
+    z-index: 50;
+    overflow: hidden;
+}
+
+
+.sec h2 {
+    font-size: 3.5em;
+}
+
+.sec #name {
+    font-size: 1.5em;
+    font-family: 'Rancho', cursive;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.sec h3 {
+    font-size: 1.8em;
+    margin: 2%;
+}
+
+.sec h4 {
+    font-size: 1.2em;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.sec p {
+    margin: 10px 20px 40px;
+}
+
+.sec ul {
+    margin: 0 5%;
+}
+
+.sec ul li {
+    margin: 2%;
+}
+
+
+@media screen and (max-width: 650px) {
+
+    #header {
+        padding: 1em 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #header ul {
+        padding: 0.5em;
+    }
+
+    section #text {
+        font-size: 20vw;
+    }
+
+    section img#cloud {
+        object-fit: contain;
+        height: 600px;
+        width: 600px;
+    }
+
+    section img#bird1 {
+        object-fit: contain;
+        height: 600px;
+        width: 400px;
+    }
+
+    section img#bird2 {
+        object-fit: contain;
+        height: 750px;
+        width: 500px;
+    }
+
+    .sec ul li {
+        margin: 20px;
+    }
+
+    .sec ul {
+        margin: 0px 0px;
+    }
+
+    .sec h3 {
+        font-size: 1.5em;
+        margin: 20px 0px;
+    }
+
+    .sec p {
+        margin: 1% 4%;
+    }
+
+    .glass {
+        backdrop-filter: blur(1px);
+    }
+
+}
+.text
+{
+    position: absolute;
+}
+

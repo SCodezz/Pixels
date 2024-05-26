@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:500,600,700,800,900&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #085A7A;
+    color: #ffffff;
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.2em 5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99999;
+}
+
+#header .logo {
+    color: #002431;
+    font-weight: 800;
+    font-size: 2.5em;
+    text-decoration: none;
+}
+
+
+.about-us-container {
+    max-width: 900px;
+    margin:90px auto;
+    padding: 120px;
+    background: #166381;
+    box-shadow: 0 0 50px rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.about-us-container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+    font-family:"Poppins",sans-serif;
+}
+
+.about-us-container h2 {
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-family:"Poppins",sans-serif;
+}
+
+.about-us-container h3 {
+    font-size: 24px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-family:"Poppins",sans-serif;
+}
+
+.about-us-container p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-family:"Poppins",sans-serif;
+}
+
+.about-us-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-us-container ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    font-family:"Poppins",sans-serif;
+}
+
+.about-us-container ul li::before {
+    content: '✔';
+    color: #fbea6a;
+    position: absolute;
+    left: 0;
+    top:0;
+}
