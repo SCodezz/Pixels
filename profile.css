@@ -1,0 +1,329 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+      "Source Han Sans CN", sans-serif;
+  }
+  @import url('https://fonts.googleapis.com/css?family=Poppins:500,600,700,800,900&display=swap');
+  
+  .main-container {
+    overflow: hidden;
+  }
+  
+  .main-container,
+  .main-container * {
+    box-sizing: border-box;
+  }
+  
+  input,
+  select,
+  textarea,
+  button {
+    outline: 0;
+  }
+  
+  .main-container {
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    margin: 0 auto;
+    /* background: #98bf79; */
+    background: linear-gradient(109.6deg, rgb(61, 237, 253) 44.2%, rgb(3, 136, 238) 95.6%);
+    overflow: hidden;
+  }
+  .rectangle {
+    position: relative;
+    width: 1340px;
+    height: 157px;
+    margin: 40px 0 0 45px;
+    background: #36bbbb;
+    border-radius: 111px;
+    border-radius:10px;
+  }
+  .flex-column {
+    position: absolute;
+    width: 164px;
+    height: 135px;
+    top: 8px;
+    left: 0;
+    z-index: 5;
+  }
+  .ellipse {
+    position: absolute;
+    width: 143px;
+    height: 141px;
+    top: 0;
+    left: 11px;
+    background: url(./assets/images/72a513c6-16d1-4184-97ea-7f4788ba87f5.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 4;
+  }
+  
+  .flex-column-f {
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 65px;
+    top: 5.75px;
+    left: 260px;
+    font-size: 0px;
+    z-index: 7;
+  }
+  .tina-smith,
+  .tina-smith-12,
+  .tina-smith12-gmail-com {
+      display: block;
+      margin: 5px 0;
+      color: #000000;
+      font-family:"Poppins",sans-serif;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 36px;
+  }
+  
+  .flex-column-e {
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    top: 19px;
+    left: 705px;
+    font-size: 0px;
+    z-index: 8;
+  }
+  .age {
+    display: block;
+    position: relative;
+    height: 36px;
+    margin: 0 0 0 0;
+    color: #4a3a3a;
+    font-family:"Poppins",sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 8;
+  }
+  .date-of-birth {
+    display: block;
+    position: relative;
+    height: 36px;
+    margin: 4px 0 0 0;
+    color: #4a3a3a;
+    font-family:"Poppins",sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 1;
+  }
+  .phone-number {
+    display: block;
+    position: relative;
+    height: 36px;
+    margin: 4px 0 0 0;
+    color: #4a3a3a;
+    font-family:"Poppins",sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 2;
+  }
+  .rectangle-1 {
+    position: relative;
+    width: 1302px;
+    height: 120px;
+    margin: 29px 0 0 56px;
+    background: #baf0f0;
+    z-index: 9;
+    border-radius:10px;
+  }
+  .istockphoto {
+    position: absolute;
+    width: 117px;
+    height: 200px;
+    bottom: px;
+    left: 30px;
+    background: url(./assets/images/5682967a-9804-46ab-aef4-98338cababc6.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 15;
+    border-radius:10px;
+  }
+  .recycling-points {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 39px;
+    top: 46px;
+    left: 162px;
+    color: #000000;
+    font-family:"Poppins",sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38.727px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 23;
+    border-radius:10px;
+  }
+  .rectangle-2 {
+    position: relative;
+    width: 1302px;
+    height: 120px;
+    margin: 29px 0 0 56px;
+    background:  #baf0f0;
+    z-index: 13;
+    border-radius:10px;
+  }
+  .istockphoto-3 {
+    position: absolute;
+    width: 1px;
+    height: 114px;
+    top: 0;
+    left: 10px;
+    background: url(./assets/images/f14d0c18-c17c-4851-b53c-4dbd763e878b.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 16;
+    border-radius:10px;
+  }
+  .metal-can-points {
+    position: absolute;
+    width: 628px;
+    height: 39px;
+    top: 43px;
+    left: 162px;
+    cursor: pointer;
+    color: #000000;
+    font-family:"Poppins",sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38.727px;
+    white-space: nowrap;
+    background: transparent;
+    border: none;
+    z-index: 21;
+    border-radius:10px;
+  }
+  .rectangle-4 {
+    position: relative;
+    width: 1302px;
+    height: 120px;
+    margin: 178px 0 0 56px;
+    background:  #baf0f0;
+    z-index: 11;
+    border-radius:10px;
+  }
+  .istockphoto-5 {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: 2px;
+    left: 15px;
+    background: url(./assets/images/bb7442db-689d-4d78-8acf-0e55672b6ee3.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 17;
+  }
+  .metal-can-points-6 {
+    position: absolute;
+    width: 520px;
+    height: 39px;
+    top: 38px;
+    left: 162px;
+    cursor: pointer;
+    color: #000000;
+    font-family:"Poppins",sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38.727px;
+    white-space: nowrap;
+    background: transparent;
+    border: none;
+    z-index: 19;
+  }
+  .rectangle-7 {
+    position: relative;
+    width: 1302px;
+    height: 120px;
+    margin: 29px 0 0 56px;
+    background:  #baf0f0;
+    z-index: 10;
+    border-radius:10px;
+  }
+  .istockphoto-8 {
+    position: absolute;
+    width: 108px;
+    height: 100px;
+    top: 10px;
+    left: 19px;
+    background: url(./assets/images/002c3b6c-1184-4d37-9dfe-d6962280860c.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 18;
+  }
+  .recycling-points-button {
+    position: absolute;
+    width: 584px;
+    height: 39px;
+    top: 36px;
+    left: 162px;
+    cursor: pointer;
+    color: #000000;
+    font-family:"Poppins",sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38.727px;
+    white-space: nowrap;
+    background: transparent;
+    border: none;
+    z-index: 20;
+    border-radius:10px;
+  }
+  .istockphoto-x-removebg-preview {
+    position: absolute;
+    width: 116px;
+    height: 123px;
+    top: 522px;
+    left: 71px;
+    background: url(./assets/images/c9175378-f035-4e15-9625-e9fd770599a9.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 14;
+    border-radius:10px;
+  }
+  .rectangle-9 {
+    position: absolute;
+    width: 1302px;
+    height: 120px;
+    top: 524px;
+    left: 56px;
+    background:  #baf0f0;
+    z-index: 12;
+    border-radius:10px;
+  }
+  .recycling-first-button {
+    position: absolute;
+    width: 669px;
+    height: 39px;
+    top: 41px;
+    left: 162px;
+    cursor: pointer;
+    color: #000000;
+    font-family:"Poppins",sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38.727px;
+    white-space: nowrap;
+    background: transparent;
+    border: none;
+    z-index:22;
+    border-radius:10px;
+  }
+  

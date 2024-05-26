@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@700;900&family=Oswald:wght@500&family=Poppins:wght@200&family=Roboto+Condensed:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Poppins:500,600,700,800,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* background: linear-gradient(52deg, rgb(31, 62, 13) 0%, rgb(145, 220, 129) 100%); */
+  background: linear-gradient(109.6deg, rgb(61, 237, 253) 44.2%, rgb(3, 136, 238) 95.6%);
+  
+  }
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5em 5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99999;
+}
+
+#header .logo {
+    color: #002431;
+    font-weight: 800;
+    font-size: 2.5em;
+    text-decoration: none;
+    
+}
+
+#header ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#header ul li {
+    list-style: none;
+    margin: 0px 10px;
+}
+
+#header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #003549;
+    border-radius: 20px;
+}
+
+#header ul li a:hover,
+#header ul li a.active {
+    background: #003549;
+    color: white;
+}
+
+
+/* tryy */
+
+/* Dropdown Menu */
+.dropdown {
+    display:flex;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #dee3e6;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 18px;
+    /* margin-top:10px; */
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #085a7a;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .header .dropdown:hover .dropbtn {
+  background-color: white;
+  color: #003549;
+}
+
+.wrapper {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  background: rgb(3, 5, 3);
+  border: 3px solid #7f49c0;
+  border-radius: 40px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  overflow: hidden;
+  transform: scale(1);
+  transition: transform 0.5s, height 0.2s ease;
+  opacity:1;
+}
+
+.wrapper.active .form-box-login {
+  transition: transform 0.18s ease;
+  transform: translateX(-400px);
+}
+
+.wrapper .cross {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background: white;
+  font-size: 1.5em;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.wrapper .form-box-login, .wrapper .form-box-register {
+  width: 100%;
+  padding: 40px;
+  position: absolute;
+  transition: transform 0.18s ease;
+}
+
+.wrapper.active .form-box-register {
+  transform: translateX(0);
+}
+
+.wrapper .form-box-register {
+  transform: translateX(400px);
+}
+
+.form-box-login h2, .form-box-register h2 {
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-login {
+  position: relative;
+  width: 100%;
+  margin: 30px 0;
+}
+
+.input-login input {
+  width: 100%;
+  height: 40px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid white;
+  color: white;
+  font-weight: 600;
+  padding-left: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input-login input:focus, .input-login input:valid {
+  border-bottom-color: #7f49c0;
+}
+
+.input-login label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  color: white;
+  font-weight: 500;
+  pointer-events: none;
+  transition: top 0.3s, color 0.3s;
+}
+
+.input-login input:focus ~ label, .input-login input:valid ~ label {
+  top: -10px;
+  color: #477ad3;
+}
+
+.input-login .icon {
+  position: absolute;
+  right: 8px;
+  font-size: 1.2em;
+  color: white;
+  line-height: 40px;
+}
+
+.remember-box {
+  font-size: 0.9em;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  margin: -15px 0 15px;
+}
+
+.remember-box label input {
+  margin-right: 3px;
+}
+
+.link, .login-link, .register-link {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.link:hover, .login-link:hover, .register-link:hover {
+  text-decoration: underline;
+  color: #7f49c0;
+}
+
+.btn {
+  width: 100%;
+  height: 45px;
+  background: #7f49c0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  color: white;
+  font-weight: bold;
+  transition:background 0.3s;
+}
+
+.btn:hover {
+  background: #7f49c0;
+}
+
+.register {
+  font-size: 0.9em;
+  text-align: center;
+  font-weight: 500;
+  margin: 25px 0 10px;
+}
+
+.bx-arrow-back {
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  top: 20px;
+  left: 10px;
+  cursor: pointer;
+  line-height: 50px;
+  text-align:center;
+}

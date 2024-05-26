@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Scanner and Photo Upload</title>
+    <link rel="stylesheet" href="qrcode.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Scan QR Code and Upload Photo</h1>
+        <div id="qr-reader" class="qr-reader"></div>
+        <div id="qr-result" class="qr-result">
+            <span id="result">QR Code Result: None</span>
+        </div>
+        <div class="qr-code-demo">
+            <p>Scan This</p>
+            <img src="cqr.jpg" alt="">
+        </div>
+        <input type="file" id="photo-upload" accept="image/*" hidden>
+        <!-- <button id="upload-btn" disabled>Upload Photo</button> -->
+        <div id="uploaded-image-container" class="uploaded-image-container">
+            <p id="upload-message" class="upload-message"></p>
+            <img id="uploaded-image" class="uploaded-image" src="" alt="Uploaded Image" hidden>
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/html5-qrcode/minified/html5-qrcode.min.js"></script>
+    <script src="qrcode.css"></script>
+</body>
+</html>
